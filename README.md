@@ -24,7 +24,7 @@ $ npm install nodemon (para facilitar o desenvolvimento)
 Para facilitar o desenvolvimento, rode utilizando o docker-compose. Ele vai subir tanto o mongodb, quanto o node em containers separados.
 
 ```
-$ docker-compose up
+$ docker-compose up -d
 ```
 
 URLs dos serviços
