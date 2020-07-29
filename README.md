@@ -32,6 +32,9 @@ URLs dos serviços
 * ⚙️**Swagger UI** at `http://localhost:3000/doc`
 * 🛢️**MongoDB** running at `mongodb://localhost:27017`
 
+Collection do postman para testes:
+https://www.getpostman.com/collections/3785d6fc5c3d2959da13
+
 ## Desenvolvimento e deploy
 #### 1. Rodar sem o docker.
 
