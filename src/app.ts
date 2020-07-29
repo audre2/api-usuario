@@ -2,11 +2,13 @@ import * as express from "express";
 import { UserController } from "./controllers/userController";
 import * as mongoose from "mongoose";
 
+const host = "mongo";
+
 class App {
 
     public app: express.Application;
     public userRoute: UserController = new UserController();
-    public mongoUrl: string = 'mongodb://localhost:27017/user';
+    public mongoUrl: string = `mongodb://${host}:27017/user`;
     
     constructor() {
         this.app = express();

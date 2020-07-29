@@ -4,6 +4,7 @@ services:
   mongo:
     container_name: mongolocal
     image: mongo:latest
+    hostname: mongo
     restart: always
     environment:
       - MONGO_INITDB_DATABASE= user
@@ -11,6 +12,20 @@ services:
       - 27017:27017
     volumes:
       - mongodb_data_container:/data/db
+
+  node:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: node-api
+    image: audre/via-varejo-api
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+    depends_on:
+      - mongo
+    environment:
+      WAIT_HOSTS: mongo:27017
 
 volumes:
   mongodb_data_container:

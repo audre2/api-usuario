@@ -1,18 +1,15 @@
 FROM node:12
 
-# Add package file
+# Create app directory
+WORKDIR /usr/src/app
+
 COPY package*.json ./
 
-# Install deps
 RUN npm install
 
-# Copy source
+# Bundle app source
 COPY . .
 
-# Build dist
-RUN npm run build
-
-# Expose port 3000
 EXPOSE 3000
 
-CMD npm run dev
+CMD [ "npm", "run", "prod" ]

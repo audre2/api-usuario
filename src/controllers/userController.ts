@@ -9,8 +9,8 @@ export class UserController {
 
     private userService: UserService = new UserService(); 
     
-    public routes(app): void {    
-
+    public routes(app): void {   
+        
         app.route('/users')
         //Buscar todos os usuários
         .get((req: Request, res: Response) => {
