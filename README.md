@@ -7,7 +7,7 @@ Esse é um repositório que pode ser usado como ponto de partida para desenvolvi
 #### 1. Clonar o repositório
 
 ```
-$ git clone git@github.com:audre2/api-usuario.git nome-app
+$ git clone https://github.com/audre2/api-usuario.git nome-app
 $ cd nome-app
 ```
 
