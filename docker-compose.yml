@@ -18,7 +18,7 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: node-api
-    image: audre/via-varejo-api
+    image: audre/user-api
     restart: unless-stopped
     ports:
       - 3000:3000

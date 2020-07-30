@@ -6,6 +6,13 @@ const User = mongoose.model('User', UserSchema);
 
 export class UserService {
 
+/*     public getTeste() {
+        const text = [{ "firstName":"John" , "lastName":"Doe" },
+        { "firstName":"Anna" , "lastName":"Smith" },
+        { "firstName":"Peter" , "lastName":"Jones" }];
+        return text;
+    } */
+
     public async getAllUsers() {
         try {
             const users = await User.find({});

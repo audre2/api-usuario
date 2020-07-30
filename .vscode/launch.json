@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+      {
+        "name": "Launch index.ts",
+        "type": "node",
+        "request": "launch",
+        "runtimeArgs": [
+            "-r",
+            "ts-node/register"
+        ],
+        "args": [
+            "${workspaceFolder}//src//server.ts"
+        ]
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Mocha All",
+        "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+        "args": [
+            "-r",
+            "ts-node/register",
+            "--timeout",
+            "999999",
+            "--colors",
+            "${workspaceFolder}//src/tests/*"
+        ],
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen",
+        "protocol": "inspector"
+    }
+  ]
+}

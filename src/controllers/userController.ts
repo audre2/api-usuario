@@ -16,7 +16,7 @@ export class UserController {
         .get(async (req: Request, res: Response) => {
             console.log("GET todos os usuários"); 
             try {
-                const users = await this.userService.getAllUsers();;
+                const users = await this.userService.getAllUsers();
     
                 if (Object.keys(users).length === 0) {
                   res.status(404).send({ message: 'Não foi encontrado nenhum usuário'});
