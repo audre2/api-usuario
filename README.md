@@ -44,10 +44,17 @@ Necessário editar a variável host localizado no app.ts e apontar para localhos
 $ npm run dev (utiliza o nodemon)
 $ npm run build && npm test && npm run start
 ```
+Obs. É necessário que o mongodb esteja rodando local.
 
 #### 2. Rodar pelo docker
 
+Node
 ```
-$ docker build -t "nome da sua imagem" .
-$ docker run --name node-api -p 3000:3000 -d "nome da sua imagem"
+$ docker build -t defina_um_nome .
+$ docker run --name node-api -p 3000:3000 -d defina_um_nome
+```
+Mongo
+```
+$ docker pull mongo
+$ docker run --name defina_um_nome -p 27017:27017 -d mongo
 ```
