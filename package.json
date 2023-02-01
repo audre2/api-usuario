@@ -18,7 +18,7 @@
     "@babel/types": "^7.10.5",
     "babel-core": "^6.26.3",
     "express": "^4.17.1",
-    "mongoose": "^5.9.26",
+    "mongoose": "^5.13.15",
     "swagger-ui-express": "^4.1.4"
   },
   "devDependencies": {
